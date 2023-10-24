@@ -38,6 +38,18 @@ body {
   @apply lg:px-20 py-6 px-5;
 }
 
+.main-heading {
+  background: -webkit-linear-gradient(#fccfff, #fef6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 0.3s ease-in;
+}
+.sub-heading {
+  background: -webkit-linear-gradient(#fccfff, #fef6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: opacity 0.3s ease-in;
+}
 ::-webkit-scrollbar {
   width: 5px;
   height: 4px;
@@ -54,11 +66,9 @@ body {
 }
 
 .enquire {
-  @apply text-base font-medium text-gray-50;
+  @apply text-base font-medium text-[var(--lighter-dark)] bg-[var(--theme-color)];
   padding: 0.3rem 1.5rem;
-  color: var(--lighter-dark);
   border: var(--lighter-dark) 1px solid;
-  background-color: var(--theme-color);
   transition: all 0.3s ease-in;
 }
 .downIcon {
@@ -74,17 +84,16 @@ body {
 .dropDown {
   @apply my-9  -mx-2 py-3 absolute top-0 left-0 flex justify-center items-start flex-col gap-3 rounded-sm shadow-md;
   width: 150px;
-  background-color: var(--lighter-dark);
+  background-color: #101010e2;
   transition: 0.3s ease-in;
   transform: scaleY(0) translateY(50%);
   opacity: 0;
 }
 .dropDownWide.dropDown {
   @apply -mx-5 py-5 px-3 absolute top-0 left-0 flex flex-row justify-start items-center rounded-sm shadow-md flex-wrap;
-  width: 800px;
-  background-color: var(--lighter-dark);
+  width: 820px;
   transition: 0.3s ease-in;
-  transform: scaleY(0) translateY(50%);
+  transform: scaleY(0) translateY(50%) translateX(-15%);
   opacity: 0;
   margin-top: 38px;
 }
@@ -93,6 +102,10 @@ body {
 }
 .dropDownLink:hover .dropDown {
   transform: scaleY(1) translateY(0);
+  opacity: 1;
+}
+.dropDownLink:hover .dropDownWide.dropDown {
+  transform: scaleY(1) translateY(0) translateX(-15%);
   opacity: 1;
 }
 .dropDownLink:hover .downIcon {
@@ -129,4 +142,30 @@ body {
 .dropDownItem {
   @apply py-2 px-4 text-sm font-medium;
   transition: all 0.3s ease-in;
+}
+
+/* Button */
+
+.button {
+  @apply my-5 px-7 py-4 text-[var(--lighter-dark)] bg-[var(--theme-color)] font-medium uppercase border border-[var(--lighter-dark)];
+  transition: all 0.3s ease-in;
+}
+.button:hover {
+  @apply bg-[var(--lighter-dark)] text-[var(--theme-color)];
+}
+
+/* Practice Area Grid */
+.practice-area-description {
+  transition: all 0.3s ease-in;
+}
+.practice-area-title {
+  transition: all 0.3s ease-in;
+}
+.practice-container:hover .practice-area-description {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.practice-container:hover .practice-area-title {
+  transform: translateY(20%);
 }

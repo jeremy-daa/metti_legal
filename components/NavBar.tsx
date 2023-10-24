@@ -10,6 +10,7 @@ const NavBar = () => {
         <Image
           alt="Metti Legal Services Logo"
           src="/logo.png"
+          className="drop-shadow-lg"
           width={50}
           height={50}
         />
