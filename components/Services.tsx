@@ -18,12 +18,17 @@ const Services = () => {
       image: "/icons/real-estate-law.svg",
       link: "/real-estate-and-property",
     },
+    {
+      title: "Banking & Financial Services",
+      image: "/icons/financial-consulting.svg",
+      link: "/banking-and-financial-services",
+    },
   ];
   return (
     <div className="w-full p-4 flex flex-wrap bg-[#fac6ff] h-[150px]">
       {services.map((service, key) => (
         <div
-          className="w-1/3 flex flex-col items-center justify-center pt-2"
+          className="w-1/4 flex flex-col items-center justify-center pt-2"
           key={key}
         >
           <Image

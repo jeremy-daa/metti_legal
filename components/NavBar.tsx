@@ -1,11 +1,31 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineDown } from "react-icons/ai";
 import NavLink from "./NavLink";
+import { useState } from "react";
 
 const NavBar = () => {
+  const [style, setStyle] = useState({});
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setStyle({
+        backgroundColor: "rgba(46, 46, 46, 0.98)",
+        boxShadow: "0px 0px 10px rgba(0,0,0,0.1)",
+      });
+    } else {
+      setStyle({});
+    }
+  };
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", handleScroll);
+  }
+
   return (
-    <nav className="flexBetween w-full paddings sticky top-0 left-0 z-10">
+    <nav
+      className="flexBetween w-full paddings sticky top-0 left-0 z-10 duration-300"
+      style={style}
+    >
       <Link href={"/"}>
         <Image
           alt="Metti Legal Services Logo"
