@@ -11,7 +11,7 @@ export const authOptions: NextAuthOptions = {
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        const res = await fetch(`/api/admin`, {
+        const res = await fetch(`https://metti-legal.vercel.app/api/admin`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
