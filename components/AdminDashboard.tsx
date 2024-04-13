@@ -189,7 +189,7 @@ const AdminDashboard = () => {
         title: title || null,
         content: content || null,
         image: imageUrl || null,
-        file: fileUrl || null,
+        fileAttached: fileUrl || null,
       }),
     });
     if (res.status === 200) {
