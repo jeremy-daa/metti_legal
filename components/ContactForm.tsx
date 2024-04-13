@@ -51,7 +51,7 @@ const ContactForm = () => {
           className="w-full"
           onSubmit={(e) => {
             e.preventDefault();
-            const res: any = fetch("/api/enquire", {
+            const res: any = fetch("/api/contact", {
               method: "POST",
               body: JSON.stringify({
                 name: name,
