@@ -59,78 +59,80 @@ const NavBar = () => {
           </NavLinkDisabled>
           <ul className="dropDown inline-block dropDownWide">
             <li>
-              <Link href={"sectors/banking-and-financial-services"}>
+              <Link href={"/sectors/banking-and-financial-services"}>
                 Banking & Financial Services
               </Link>
             </li>
             <li>
-              <Link href={"sectors/construction-and-infrastracture"}>
+              <Link href={"/sectors/construction-and-infrastracture"}>
                 Construction & Infrastructure
               </Link>
             </li>
             <li>
-              <Link href={"sectors/corporate-services"}>
+              <Link href={"/sectors/corporate-services"}>
                 Corporate Services
               </Link>
             </li>
             <li>
-              <Link href={"sectors/dispute-resolution"}>
+              <Link href={"/sectors/dispute-resolution"}>
                 Dispute Resolution
               </Link>
             </li>
             <li>
-              <Link href={"sectors/employment"}>Employment</Link>
+              <Link href={"/sectors/employment"}>Employment</Link>
             </li>
             <li>
-              <Link href={"sectors/energy-and-mining"}>Energy & Mining</Link>
+              <Link href={"/sectors/energy-and-mining"}>Energy & Mining</Link>
             </li>
             <li>
-              <Link href={"sectors/intellectual-property-and-technology"}>
+              <Link href={"/sectors/intellectual-property-and-technology"}>
                 Intellectual Property & Technology
               </Link>
             </li>
             <li>
-              <Link href={"sectors/project-finance-ppp-and-public-procurement"}>
+              <Link
+                href={"/sectors/project-finance-ppp-and-public-procurement"}
+              >
                 Project Finance, PPP & Public Procurement
               </Link>
             </li>
             <li>
-              <Link href={"sectors/real-estate-and-property"}>
+              <Link href={"/sectors/real-estate-and-property"}>
                 Real Estate & Property
               </Link>
             </li>
             <li>
-              <Link href={"sectors/regulatory-and-government-affairs"}>
+              <Link href={"/sectors/regulatory-and-government-affairs"}>
                 Regulatory & Government Affairs
               </Link>
             </li>
 
             <li>
-              <Link href={"sectors/tax-and-customs"}>Tax & Customs</Link>
+              <Link href={"/sectors/tax-and-customs"}>Tax & Customs</Link>
             </li>
             <li>
-              <Link href={"sectors/trade-practice-and-anti-trust"}>
+              <Link href={"/sectors/trade-practice-and-anti-trust"}>
                 Trade Practice & Anti-Trust
               </Link>
             </li>
             <li>
-              <Link href={"sectors/aviation-law"}>Aviation Law</Link>
+              <Link href={"/sectors/aviation-law"}>Aviation Law</Link>
             </li>
             <li>
-              <Link href={"sectors/hospitality-and-leisure"}>
+              <Link href={"/sectors/hospitality-and-leisure"}>
                 Hospitality & Leisure
               </Link>
             </li>
             <li>
-              <Link href={"sectors/ict-and-telecom"}>ICT & Telecom</Link>
+              <Link href={"/sectors/ict-and-telecom"}>ICT & Telecom</Link>
             </li>
             <li>
-              <Link href={"sectors/manufacturing-and-industries"}>
+              <Link href={"/sectors/manufacturing-and-industries"}>
                 Manufacturing & Industries
               </Link>
             </li>
             <li>
-              <Link href={"sectors/ngos"}>NGO’s</Link>
+              <Link href={"/sectors/ngos"}>NGO’s</Link>
             </li>
           </ul>
         </li>
