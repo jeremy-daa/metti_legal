@@ -66,7 +66,7 @@ const Hero = () => {
             <p className="text-white text-center text-2xl drop-shadow mb-3 sub-heading">
               {slides[index].description}
             </p>
-            <Link className="button" href={"/contact-us"}>
+            <Link className="button" href={"/enquire"}>
               Schedule a Consultation
             </Link>
           </div>

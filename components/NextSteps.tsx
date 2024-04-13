@@ -11,7 +11,7 @@ const NextSteps = () => {
         <h1 className="text-[34px] text-slate-100 mt-5 mb-12">
           Contact our team to get started
         </h1>
-        <Link className="button " href={"/contact-us"}>
+        <Link className="button " href={"/enquire"}>
           Schedule a Consultation
         </Link>
       </div>

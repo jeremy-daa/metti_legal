@@ -66,7 +66,7 @@ const Footer = () => {
                 <NavLink href="/testimonials">Testimonials</NavLink>
               </li>
               <li>
-                <Link href="/contact-us">Contact Us</Link>
+                <Link href="/enquire">Contact Us</Link>
               </li>
             </ul>
           </div>

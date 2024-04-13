@@ -28,7 +28,7 @@ const Hero2 = ({
           </h1>
         ))}
       </div>
-      <Link className="button " href={"/contact-us"}>
+      <Link className="button " href={"/enquire"}>
         Schedule a Consultation
       </Link>
       <Image
