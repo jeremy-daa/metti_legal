@@ -15,7 +15,14 @@ export default function Home() {
       <Hero />
       <Services />
       <PracticeAreas />
-      <Description />
+      <Description
+        title={"How we Operate"}
+        description={[
+          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla architecto soluta voluptatem qui, quis rem tenetur fuga sapiente, quos quo alias beatae iusto facilis quam consequatur ducimus non doloremque, sit eius quod dolorum blanditiis voluptas libero.",
+          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla architecto soluta voluptatem qui, quis rem tenetur fuga sapiente, quos quo alias beatae iusto facilis quam consequatur ducimus non doloremque, sit eius quod dolorum blanditiis voluptas libero.",
+        ]}
+        img="/images/4.jpg"
+      />
       <Team />
       <Expertise />
       <Testimonials />

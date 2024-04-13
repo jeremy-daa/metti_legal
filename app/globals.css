@@ -1,12 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
   --theme-color: #e95bf6;
   --lighter-dark: #2a2a2a;
   --light-color: #fff;
   --dark-color: #000;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +25,7 @@ body {
 }
 
 .flexBetween {
-  @apply flex justify-between items-center;
+  @apply lg:flex hidden justify-between items-center;
 }
 
 .flexStart {
@@ -35,7 +37,41 @@ body {
 }
 
 .paddings {
-  @apply lg:px-20 py-6 px-5;
+  @apply xl:px-20 py-6 px-8;
+}
+
+.double-dash {
+  position: relative;
+  width: fit-content;
+  margin: 0;
+}
+
+.double-dash::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--theme-color);
+  z-index: -1;
+}
+
+.double-dash::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--theme-color);
+  z-index: -1;
+}
+
+.stickyBG {
+  background: url('/images/3.jpg') no-repeat top center/cover fixed;
+  filter: brightness(60%);
+  z-index: -2;
 }
 
 .main-heading {
@@ -44,15 +80,18 @@ body {
   -webkit-text-fill-color: transparent;
   transition: opacity 0.3s ease-in;
 }
+
 .sub-heading {
   background: -webkit-linear-gradient(#fccfff, #fef6ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: opacity 0.3s ease-in;
 }
+
 .section-heading {
   @apply text-4xl font-bold uppercase text-gray-800;
 }
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 4px;
@@ -62,9 +101,10 @@ body {
   background: #888;
   border-radius: 12px;
 }
+
 /* Nav Bar */
 .navLink {
-  @apply text-sm font-medium flex justify-center items-center text-gray-50  uppercase;
+  @apply text-sm font-medium flex justify-center items-center text-gray-50 uppercase;
   transition: all 0.3s ease-in;
 }
 
@@ -74,34 +114,39 @@ body {
   border: var(--lighter-dark) 1px solid;
   transition: all 0.3s ease-in;
 }
-.enquire-reverse {
+
+.enquire:hover {
   @apply text-base font-medium text-[var(--theme-color)] bg-[var(--lighter-dark)];
   padding: 0.3rem 1.5rem;
   border: var(--theme-color) 1px solid;
   transition: all 0.3s ease-in;
 }
+
 .downIcon {
   @apply px-1;
   font-size: 1.35rem;
   transition: all 0.3s ease-in;
 }
+
 .enquire:hover {
   background-color: var(--lighter-dark);
   color: var(--theme-color);
 }
+
 .enquire-reverse:hover {
   background-color: var(--theme-color);
   color: var(--lighter-dark);
 }
 
 .dropDown {
-  @apply my-9  -mx-2 py-3 absolute top-0 left-0 flex justify-center items-start flex-col gap-3 rounded-sm shadow-md;
+  @apply my-9 -mx-2 py-3 absolute top-0 left-0 flex justify-center items-start flex-col gap-3 rounded-sm shadow-md;
   width: 150px;
   background-color: #101010e2;
   transition: 0.3s ease-in;
   transform: scaleY(0) translateY(50%);
   opacity: 0;
 }
+
 .dropDownWide.dropDown {
   @apply -mx-5 py-5 px-3 absolute top-0 left-0 flex flex-row justify-start items-center rounded-sm shadow-md flex-wrap;
   width: 820px;
@@ -110,44 +155,53 @@ body {
   opacity: 0;
   margin-top: 38px;
 }
+
 .dropDownLink {
   @apply py-2 px-1;
 }
+
 .dropDownLink:hover .dropDown {
   transform: scaleY(1) translateY(0);
   opacity: 1;
 }
+
 .dropDownLink:hover .dropDownWide.dropDown {
   transform: scaleY(1) translateY(0) translateX(-15%);
   opacity: 1;
 }
+
 .dropDownLink:hover .downIcon {
   rotate: 180deg;
 }
+
 .dropDownLink:hover .navLink {
   color: var(--theme-color);
 }
+
 .dropDownLink:hover .downIcon {
   @apply text-gray-50;
 }
 
 .dropDown li {
-  @apply w-full  text-sm font-medium text-gray-50;
+  @apply w-full text-sm font-medium text-gray-50;
 }
 
 .dropDown li:not(:last-child) {
   border-bottom: 1px solid var(--theme-color);
   padding-bottom: 0.5rem;
 }
+
 .dropDownWide.dropDown li {
   border-bottom: 1px solid var(--theme-color);
   padding-bottom: 0.5rem;
   width: 48%;
 }
+
 .dropDown li a {
   @apply text-sm font-light uppercase pl-4 text-gray-300;
   transition: all 0.3s ease-in;
 }
+
 .dropDown li a:hover {
   color: var(--theme-color);
 }
@@ -163,6 +217,7 @@ body {
   @apply my-5 px-7 py-4 text-[var(--lighter-dark)] bg-[var(--theme-color)] font-medium uppercase border border-[var(--lighter-dark)];
   transition: all 0.3s ease-in;
 }
+
 .button:hover {
   @apply bg-[var(--lighter-dark)] text-[var(--theme-color)];
 }
@@ -171,9 +226,11 @@ body {
 .practice-area-description {
   transition: all 0.3s ease-in;
 }
+
 .practice-area-title {
   transition: all 0.3s ease-in;
 }
+
 .practice-container:hover .practice-area-description {
   transform: translateY(0);
   opacity: 1;
@@ -188,6 +245,7 @@ body {
 
   transform: all 0.3s ease-in;
 }
+
 .practice-area-link:hover {
   @apply border-b-2 border-[var(--theme-color)];
   /* color: rgba(46, 46, 46, 0.744); */
@@ -199,21 +257,26 @@ body {
   max-width: 1170px;
   margin: auto;
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
 }
+
 ul {
   list-style: none;
 }
+
 .footer {
   background-color: var(--lighter-dark);
   padding: 70px 0;
 }
+
 .footer-col {
   width: 33%;
   padding: 0 15px;
 }
+
 .footer-col h4 {
   font-size: 18px;
   @apply text-gray-100;
@@ -222,6 +285,7 @@ ul {
   font-weight: 500;
   position: relative;
 }
+
 .footer-col h4::before {
   content: "";
   position: absolute;
@@ -232,9 +296,11 @@ ul {
   box-sizing: border-box;
   width: 50px;
 }
+
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
+
 .footer-col ul li a {
   font-size: 16px;
   text-transform: capitalize;
@@ -244,10 +310,12 @@ ul {
   display: block;
   transition: all 0.3s ease;
 }
+
 .footer-col ul li a:hover {
   @apply text-gray-100;
   padding-left: 8px;
 }
+
 .footer-col .social-links svg {
   display: inline-block;
   height: 40px;
@@ -261,11 +329,13 @@ ul {
   color: #ffffff;
   transition: all 0.5s ease;
 }
+
 .footer-col .social-links svg:hover {
   transform: translateY(-5px);
   background-color: var(--lighter-dark);
   color: var(--theme-color);
 }
+
 .footer-col .social-links a:not(:first-child) {
   margin-left: 5px;
 }
@@ -277,6 +347,7 @@ ul {
     margin-bottom: 30px;
   }
 }
+
 @media (max-width: 574px) {
   .footer-col {
     width: 100%;
@@ -287,6 +358,7 @@ ul {
   @apply text-[var(--theme-color)] w-fit;
   border-bottom: 2px solid var(--theme-color);
 }
+
 .footer-nav-link li a.active:hover {
   @apply text-[var(--theme-color)] whitespace-nowrap;
   border-bottom: 2px solid var(--theme-color);
@@ -308,6 +380,7 @@ ul {
 .underline-short {
   @apply relative;
 }
+
 .underline-short::after {
   transition: all 0.3s ease-in;
   content: "";
@@ -343,6 +416,7 @@ ul {
   justify-content: center;
   /* background: conic-gradient(var(--theme-color) 15deg, #f1f1f1 20deg); */
 }
+
 .circular-progress::before {
   content: "";
   position: absolute;
@@ -351,6 +425,7 @@ ul {
   border-radius: 50%;
   background-color: #fff;
 }
+
 .progress-value {
   position: relative;
   color: var(--theme-color);
@@ -359,6 +434,7 @@ ul {
 /* Animations */
 
 @keyframes shake {
+
   10%,
   90% {
     transform: translate3d(-1px, 0, 0);
@@ -380,7 +456,9 @@ ul {
     transform: translate3d(2px, 0, 0);
   }
 }
+
 @keyframes shake-reverse {
+
   10%,
   90% {
     transform: translate3d(1px, 0, 0);
@@ -402,6 +480,7 @@ ul {
     transform: translate3d(-2px, 0, 0);
   }
 }
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -418,12 +497,14 @@ ul {
     opacity: 0;
   }
 }
+
 .shake {
   position: relative;
 }
 
 .shake::after {
-  content: ""; /* Set the content to an empty string */
+  content: "";
+  /* Set the content to an empty string */
   position: absolute;
   top: 0;
   left: 0;
@@ -434,18 +515,106 @@ ul {
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
   perspective: 1000px;
-  z-index: -1; /* To place it behind .shake */
-  opacity: 0; /* Initially, make it transparent */
+  z-index: -1;
+  /* To place it behind .shake */
+  opacity: 0;
+  /* Initially, make it transparent */
 }
 
 .shake:hover::after {
-  opacity: 1; /* When .shake is hovered, make it visible */
+  opacity: 1;
+  /* When .shake is hovered, make it visible */
   animation: pulse 1.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
 }
 
 .shake:hover {
   animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
 }
+
 .focus:focus {
   outline-color: var(--theme-color);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1.02);
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+
+
+}
+
+.pulseText {
+  animation: pulse 1.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite;
+}
+
+.objectTopCenter {
+  object-position: center 35%;
+}
+
+.hoverFlip:hover {
+  background-color: var(--theme-color);
+  border-color: var(--light-color);
+  transition: all 0.2s ease-in;
+
+}
+
+.hoverFlip:hover div {
+  border-color: var(--light-color);
+}
+
+.hoverFlip:hover div svg {
+  color: var(--light-color);
+}
+
+.hoverFlip:hover div h1 {
+  color: var(--light-color);
+}
+
+.expandButton {
+  @apply flex justify-start items-center gap-2 mb-3 max-w-[40px] px-3 py-2 overflow-hidden duration-500;
+}
+
+.expandButton>svg {
+  @apply min-w-[20px] max-w-[20px] min-h-[20px] max-h-[20px] flex justify-center items-center;
+}
+
+.expandButton:hover {
+  @apply max-w-[150px] px-5;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+.boxShadow:hover {
+  box-shadow: 0 0 10px var(--theme-color);
 }

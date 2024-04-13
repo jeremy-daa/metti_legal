@@ -60,20 +60,21 @@ const Testimonials = () => {
   return (
     <section
       className="w-full bg-fixed flex justify-center items-center flex-col py-[8rem] relative"
-      //   style={{
-      //     background: "url('/images/2.jpg')",
-      //     backgroundSize: "cover",
-      //     backgroundPosition: "center",
-      //     backdropFilter: "blur(20px)",
-      //     backgroundRepeat: "no-repeat",
-      //     backgroundAttachment: "fixed",
-      //   }}
+    //   style={{
+    //     background: "url('/images/2.jpg')",
+    //     backgroundSize: "cover",
+    //     backgroundPosition: "center",
+    //     backdropFilter: "blur(20px)",
+    //     backgroundRepeat: "no-repeat",
+    //     backgroundAttachment: "fixed",
+    //   }}
     >
       <Image
         src="/images/2.jpg"
         alt="testimonial"
-        layout="fill"
-        objectFit="cover"
+        width={1000}
+        height={1000}
+
         className="absolute w-full h-full -z-10"
       />
       <div className="w-[80%] h-full flex justify-center items-start bg-gray-800 bg-opacity-50 flex-col py-10  pl-10">

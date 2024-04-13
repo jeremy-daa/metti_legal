@@ -38,7 +38,7 @@ const Hero = () => {
   }, [index, slides.length]);
 
   return (
-    <header className="w-full h-[100vh] relative -mt-[94px] overflow-hidden">
+    <header className="w-full h-[100vh] relative overflow-hidden">
       <div className="w-full h-full ease-in duration-500 transition-all">
         <div
           style={{
@@ -58,9 +58,9 @@ const Hero = () => {
           /> */}
         </div>
         <div className="w-full h-full absolute top-0 left-0 bg-black bg-opacity-40"></div>
-        <div className="w-full h-full absolute top-0 left-0 flex flex-col justify-center items-center translate-y-[10%]">
-          <div className="max-w-5xl flex items-center justify-center flex-col">
-            <h1 className="text-6xl text-white font-bold text-cente  text-center mb-7 tracking-wide main-heading">
+        <div className="w-full h-full absolute top-0 left-0 flex flex-col justify-center items-center lg:translate-y-[10%]">
+          <div className="lg:max-w-5xl max-w-[80%] flex items-center justify-center flex-col fadeIn">
+            <h1 className="lg:text-6xl text-4xl text-white font-bold text-cente  text-center mb-7 tracking-wide main-heading">
               {slides[index].title}
             </h1>
             <p className="text-white text-center text-2xl drop-shadow mb-3 sub-heading">
@@ -72,7 +72,7 @@ const Hero = () => {
           </div>
         </div>
         <div
-          className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 cursor-pointer"
+          className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 cursor-pointer lg:block hidden"
           style={{
             backgroundColor: "rgba(215, 215, 215, 0.3)",
           }}
@@ -87,7 +87,7 @@ const Hero = () => {
           <GrFormPrevious size={30} />
         </div>
         <div
-          className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 cursor-pointer bg-slate-300 bg-opacity-60"
+          className="absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 cursor-pointer bg-slate-300 bg-opacity-60 lg:block hidden"
           onClick={() => {
             if (index === slides.length - 1) {
               setIndex(0);

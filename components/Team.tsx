@@ -62,8 +62,11 @@ const Team = () => {
                   alt={member.name}
                   width={300}
                   height={300}
-                  objectPosition="top"
-                  objectFit="cover"
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "top",
+                  }}
+
                 />
               </div>
               <div className="relative flex self-center flex-1 lg:ml-8 ">

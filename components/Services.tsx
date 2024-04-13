@@ -28,7 +28,7 @@ const Services = () => {
     <div className="w-full p-4 flex flex-wrap bg-[#fac6ff] h-[150px]">
       {services.map((service, key) => (
         <div
-          className="w-1/4 flex flex-col items-center justify-center pt-2"
+          className="lg:w-1/4 w-1/2 flex flex-col items-center justify-center pt-2"
           key={key}
         >
           <Image

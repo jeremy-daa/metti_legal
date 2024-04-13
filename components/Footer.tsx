@@ -21,8 +21,9 @@ const Footer = () => {
               alt="Metti Legal Services Logo"
               width={80}
               height={80}
-              className="mb-5"
+              className="mb-5 w-auto h-auto"
             />
+
             <h4>Reach Us</h4>
             <ul>
               <li>
@@ -48,15 +49,18 @@ const Footer = () => {
                 <NavLink href="/">Home</NavLink>
               </li>
               <li>
-                <NavLink href="/the-firm">The Firm</NavLink>
+                <NavLink href="/our-team">Our Team</NavLink>
               </li>
               <li>
-                <NavLink href="/sectors-and-services">
-                  Sectors & Services
+                <NavLink href="/corporate-services">Corporate Services</NavLink>
+              </li>
+              <li>
+                <NavLink href="/real-estate-property">
+                  Real Estate & Property
                 </NavLink>
               </li>
               <li>
-                <NavLink href="/resources">Resources</NavLink>
+                <NavLink href="/law-policies">Laws and Policies</NavLink>
               </li>
               <li>
                 <NavLink href="/testimonials">Testimonials</NavLink>
