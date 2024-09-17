@@ -19,7 +19,7 @@ const Description = ({
         height={720}
         className="absolute object-cover brightness-50 -z-10 top-0 left-0 h-full w-full"
       />
-      <div className="flex w-[60%] flex-col gap-5 mx-10 my-[5rem] bg-gray-400 bg-opacity-30 p-5">
+      <div className="flex w-[90%]] lg:w-[60%] flex-col gap-5 mx-4 lg:mx-10 my-[5rem] bg-gray-400 bg-opacity-30 p-5">
         <h1
           className="section-heading underline-short"
           style={{ color: "var(--theme-color)" }}

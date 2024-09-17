@@ -1,7 +1,11 @@
 import Description from "@/components/Description";
 import Hero2 from "@/components/Hero2";
-import Team from "@/components/Team";
+import Image from "next/image";
 import TeamDescription from "@/components/TeamDescription";
+import Link from "next/link";
+import { MdEmail } from "react-icons/md";
+import { FaFacebook, FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
+import Lawyers from "@/components/Lawyers";
 
 const page = () => {
   return (
@@ -15,8 +19,8 @@ const page = () => {
         ]}
         img={"/images/2.jpg"}
       />
-      <Team />
-      <TeamDescription />
+      <Lawyers />
+      {/* <TeamDescription /> */}
     </div>
   );
 };

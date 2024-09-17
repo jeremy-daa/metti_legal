@@ -12,7 +12,7 @@ const Hero2 = ({
 }) => {
   return (
     <header className="h-[400px] w-full flex items-center justify-center relative bg-[#ddd4dc] -z-20 overflow-hidden">
-      <h1 className="text-[55px] tracking-wideer font-medium text-slate-200 p-5 bg-[#0000003f] rounded-[10px] shadow-lg mt-16">
+      <h1 className="text-[40px] lg:text-[55px] tracking-wideer font-medium text-slate-200 p-5 bg-[#0000003f] rounded-[10px] shadow-lg mt-16">
         {title}
       </h1>
       <Image

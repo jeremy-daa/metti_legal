@@ -33,7 +33,7 @@ const ContactForm = () => {
     }
   };
   return (
-    <section className="w-full py-[7rem] px-24 flex justify-between items-stretch gap-5">
+    <section className="w-full py-12 lg:py-[7rem] px-5 xs:px-10 md:px-24 flex justify-between lg:flex-row flex-col items-stretch gap-5">
       <div className="w-full h-full flex flex-col justify-center items- gap-5">
         <h1 className="section-heading">
           Get in touch with us for a free consultation
@@ -82,7 +82,7 @@ const ContactForm = () => {
           }}
         >
           <div className="w-full flex flex-col justify-center items-start gap-5">
-            <div className="w-full flex justify-between items-center gap-5">
+            <div className="w-full flex justify-between items-center gap-5 flex-col md:flex-row">
               <div className="w-full flex flex-col justify-start items-start gap-1">
                 <label htmlFor="name">Name</label>
                 <input

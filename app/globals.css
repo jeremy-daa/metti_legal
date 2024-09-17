@@ -25,7 +25,7 @@ body {
 }
 
 .flexBetween {
-  @apply lg:flex hidden justify-between items-center;
+  @apply flex justify-between items-center;
 }
 
 .flexStart {
@@ -38,6 +38,28 @@ body {
 
 .paddings {
   @apply xl:px-20 py-6 px-8;
+}
+
+.active {
+  position: relative;
+  transition: all 0.3s;
+}
+
+.active::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  animation: activeUnderline 0.3s ease;
+  background-color: var(--theme-color);
+}
+
+.active.mobile::before {
+  height: 3px;
+  bottom: -8px;
+
 }
 
 .double-dash {
@@ -89,7 +111,7 @@ body {
 }
 
 .section-heading {
-  @apply text-4xl font-bold uppercase text-gray-800;
+  @apply lg:text-4xl text-3xl font-bold uppercase text-gray-800;
 }
 
 ::-webkit-scrollbar {
@@ -214,7 +236,7 @@ body {
 /* Button */
 
 .button {
-  @apply my-5 px-7 py-4 text-[var(--lighter-dark)] bg-[var(--theme-color)] font-medium uppercase border border-[var(--lighter-dark)];
+  @apply my-5 sm:px-7 px-5 py-3 sm:py-4 text-[var(--lighter-dark)] bg-[var(--theme-color)] font-medium uppercase border border-[var(--lighter-dark)];
   transition: all 0.3s ease-in;
 }
 
@@ -261,6 +283,7 @@ body {
 .row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 ul {
@@ -269,7 +292,7 @@ ul {
 
 .footer {
   background-color: var(--lighter-dark);
-  padding: 70px 0;
+  padding: 70px 40px;
 }
 
 .footer-col {
@@ -617,4 +640,74 @@ ul {
 
 .boxShadow:hover {
   box-shadow: 0 0 10px var(--theme-color);
+}
+
+/* Mobile Styles */
+
+
+
+.ham-menu {
+  background: var(--nav-scroll);
+  border: 2px;
+  border: 2px solid var(--theme-color);
+  border-radius: 100%;
+  position: relative;
+}
+
+.ham-menu span {
+  height: 2px;
+  width: 65%;
+  background-color: var(--theme-color);
+  border-radius: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: .3s ease;
+}
+
+
+
+.ham-menu span:nth-child(1) {
+  top: 33%;
+}
+
+.ham-menu span:nth-child(3) {
+  top: 67%;
+}
+
+
+.ham-menu.activeMobile span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.activeMobile span:nth-child(2) {
+  opacity: 0;
+}
+
+.ham-menu.activeMobile span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.off-screen-menu {
+  background-color: rgb(34, 37, 49);
+  height: 100vh;
+  width: 100%;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 3rem;
+  transition: .3s ease;
+}
+
+.off-screen-menu.activeMobile {
+  right: 0;
 }

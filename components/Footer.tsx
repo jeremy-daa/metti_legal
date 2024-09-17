@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <div className="row">
+        <div className="row flex-wrap">
           <div className="footer-col">
             <Image
               src="/logo.png"
@@ -91,13 +91,8 @@ const Footer = () => {
         </div>
         <div className="text-gray-200 flex justify-center items-center pt-14 code font-light text-base">
           <span className="pr-2 font-light">
-            {date.getFullYear()} &copy; Meti Legal Services
-          </span>{" "}
-          ||
-          <span className="pr-2 pl-2">All Rights Reserved</span>
-          ||
-          <span className="pl-2 ">
-            <Link href="/privacy-policy">Privacy Policy</Link>
+            {date.getFullYear()} &copy; Meti Legal Services || All Rights
+            Reserved
           </span>
         </div>
       </div>

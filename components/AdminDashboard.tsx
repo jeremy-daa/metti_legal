@@ -9,6 +9,7 @@ import { set } from "mongoose";
 export const fetchPosts = async () => {
   const res = await fetch("/api/posts");
   const posts = await res.json();
+  console.log(posts);
   return posts;
 };
 

@@ -19,8 +19,8 @@ const page = () => {
       <Article />
       <Article />
       <NextSteps />
-      <Article />
-      <ContactForm />
+      {/* <Article /> */}
+      {/* <ContactForm /> */}
     </div>
   );
 };

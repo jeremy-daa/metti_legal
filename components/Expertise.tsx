@@ -26,7 +26,7 @@ const Expertise = () => {
   return (
     <div className=" bg-[#fac6ff] w-full flex flex-col justify-center items-center py-10 gap-7">
       <h1 className="section-heading">Our Expertise</h1>
-      <div className="md:w-[90%] w-full flex flex-wrap gap-1 justify-evenly items-between">
+      <div className="md:w-[90%] w-full flex flex-wrap gap-5 justify-evenly items-between px-5">
         {expertise.map((expertise, key) => (
           <div
             className="flex flex-col gap-5 justify-center items-center my-6"
