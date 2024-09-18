@@ -32,39 +32,6 @@ const Description = ({
               {desc}
             </p>
           ))}
-          {/* <p className="">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
-            architecto soluta voluptatem qui, quis rem tenetur fuga sapiente,
-            quos quo alias beatae iusto facilis quam consequatur ducimus non
-            doloremque, sit eius quod dolorum blanditiis voluptas libero.{" "}
-          </p>
-
-          <p className="">
-            Ad, explicabo adipisci deleniti unde dignissimos est at voluptates
-            ducimus facilis quam eligendi dolorem impedit labore reiciendis iste
-            fugiat quidem, maiores recusandae incidunt aut nostrum laudantium.
-            Suscipit velit voluptates tenetur libero, ducimus, asperiores quia
-            distinctio cupiditate tempore aut, consectetur illum! Quaerat iste
-            enim est voluptatum ipsa soluta recusandae nostrum laborum quos
-            necessitatibus. Veniam, minima iure maiores error repellat
-            excepturi! Assumenda fugit inventore molestiae cum?
-          </p>
-          <p className="">
-            Ad, explicabo adipisci deleniti unde dignissimos est at voluptates
-            ducimus facilis quam eligendi dolorem impedit labore reiciendis iste
-            fugiat quidem, maiores recusandae incidunt aut nostrum laudantium.
-            Suscipit velit voluptates tenetur libero, ducimus, asperiores quia
-            distinctio cupiditate tempore aut, consectetur illum! Quaerat iste
-            enim est voluptatum ipsa soluta recusandae nostrum laborum quos
-            necessitatibus. Veniam, minima iure maiores error repellat
-            excepturi! Assumenda fugit inventore molestiae cum?
-          </p> */}
-          <p className="">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
-            architecto soluta voluptatem qui, quis rem tenetur fuga sapiente,
-            quos quo alias beatae iusto facilis quam consequatur ducimus non
-            doloremque, sit eius quod dolorum blanditiis voluptas libero.{" "}
-          </p>
         </div>
       </div>
     </article>

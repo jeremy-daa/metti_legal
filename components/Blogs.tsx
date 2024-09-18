@@ -57,10 +57,10 @@ const Blogs = () => {
   return (
     <div className="py-16">
       <div className="w-full flex justify-center items-center mb-12">
-        <div className="w-[45%] flex justify-start items-center border-[2px] border-[var(--theme-color)] rounded-[50px] text-lg ">
+        <div className="w-[90%] md:w-[65%] xl:w-[45%] flex justify-start items-center border-[2px] border-[var(--theme-color)] rounded-[50px] text-lg ">
           <input
             type="text"
-            className="w-[70%] bg-transparent outline-none h-full px-10 py-4"
+            className="w-[70%] bg-transparent outline-none h-full px-5 sm:px-10 py-3 sm:py-4"
             placeholder="Search Blogs and Articles"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -71,7 +71,7 @@ const Blogs = () => {
             }}
           />
           <button
-            className="translate-x-1 flex justify-start items-center w-[30%] outline-none h-full bg-[var(--theme-color)] px-[45px] py-4 text-white font-bold border-[2px] border-[var(--theme-color)] rounded-r-[50px] hover:shadow-[var(--theme-color)] hover:shadow-md duration-500"
+            className="translate-x-1 flex justify-start items-center w-[30%] outline-none h-full bg-[var(--theme-color)] px-5 sm:px-[45px] sm:py-4 py-3 text-white font-bold border-[2px] border-[var(--theme-color)] rounded-r-[50px] hover:shadow-[var(--theme-color)] hover:shadow-md duration-500"
             onClick={handleSearch}
           >
             Search
@@ -80,11 +80,11 @@ const Blogs = () => {
       </div>
       {loading ? (
         <>
-          <div className="w-full px-[100px] flex flex-wrap justify-start items-start gap-5">
+          <div className="w-full px-5 md:px-15 xl:px-[100px] flex flex-wrap justify-evenly items-start gap-5">
             {placeholders.map((_, i) => (
               <div
                 key={i}
-                className="h-[550px] min-w-[30%] w-[30%] flex flex-col items-start justify-start relative border-[2px] border-[var(--theme-color)] rounded-[10px] shadow-[var(--theme-color)] hover:shadow-lg duration-500 px-5 py-5"
+                className="h-[550px] w-[400px] flex flex-col items-start justify-start relative border-[2px] border-[var(--theme-color)] rounded-[10px] shadow-[var(--theme-color)] hover:shadow-lg duration-500 px-5 py-5"
               >
                 <div className="w-full h-[300px] bg-[#e6e6e6e5] object-cover object-top rounded-[6px] mb-10 pulseText"></div>
                 <h2 className="w-[80%] py-5 bg-[#f79cff] object-cover object-top rounded-[6px] mb-10 pulseText"></h2>
@@ -97,11 +97,11 @@ const Blogs = () => {
           </div>
         </>
       ) : (
-        <div className="w-full px-[100px] flex flex-wrap justify-start items-start gap-5 ">
+        <div className="w-full px-5 md:px-15 xl:px-[100px] flex flex-wrap justify-evenly items-start gap-10">
           {currentBlogs.map((blog: any) => (
             <div
               key={blog._id}
-              className="min-h-[550px] min-w-[30%] w-[30%] flex flex-col items-start justify-between relative border-[2px] border-[var(--theme-color)] rounded-[10px] boxShadow duration-500 px-5 py-5 select-none"
+              className="min-h-[550px] w-[400px] flex flex-col items-start justify-between relative border-[2px] border-[var(--theme-color)] rounded-[10px] boxShadow duration-500 px-5 py-5 select-none"
             >
               <div>
                 <Image

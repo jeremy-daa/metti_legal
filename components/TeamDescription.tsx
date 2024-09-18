@@ -21,11 +21,11 @@ const TeamDescription = () => {
     },
   ];
   return (
-    <div className="h-[400px] w-full relative flex justify-start items-center mt-[100px]">
-      <div className="w-full p-4 flex flex-wrap gap-3 h-[150px] justify-between items-center px-24">
+    <div className="min-h-[400px] py-5 w-full relative flex justify-start items-center mt-[100px]">
+      <div className="w-full p-4 flex flex-wrap gap-8 min-h-[150px] justify-evenly items-center px-10 md:px-24">
         {features.map((feature, key) => (
           <div
-            className="w-[29%] h-full flex flex-col items-center justify-center pt-2 text-[var(--light-color)] text-center"
+            className="w-[300px] h-full flex flex-col items-center justify-center pt-2 text-[var(--light-color)] text-center"
             key={key}
           >
             {/* <Image

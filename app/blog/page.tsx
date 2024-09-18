@@ -5,7 +5,7 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <Hero2 title={"Recent Laws and Blogs"} img={"/images/8.jpg"} />
+      <Hero2 title={"Laws and Blogs"} img={"/images/8.jpg"} />
       <Blogs />
     </div>
   );

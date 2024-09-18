@@ -4,24 +4,24 @@ import Link from "next/link";
 const Services = () => {
   const services = [
     {
+      title: "Banking & Financial Services",
+      image: "/icons/banking.svg",
+      link: "/sectors/banking-and-financial-services",
+    },
+    {
+      title: "Construction & Infrastructure",
+      image: "/icons/construction.svg",
+      link: "/sectors/construction-and-infrastructure",
+    },
+    {
       title: "Corporate Services",
-      image: "/icons/corporate-law.svg",
-      link: "/corporate-services",
+      image: "/icons/business.svg",
+      link: "/sectors/corporate-services",
     },
     {
-      title: "Banking & Financial Services",
-      image: "/icons/financial-consulting.svg",
-      link: "/banking-and-financial-services",
-    },
-    {
-      title: "Real Estate & Property",
-      image: "/icons/real-estate-law.svg",
-      link: "/real-estate-and-property",
-    },
-    {
-      title: "Banking & Financial Services",
-      image: "/icons/financial-consulting.svg",
-      link: "/banking-and-financial-services",
+      title: "Dispute Resolution",
+      image: "/icons/dispute.svg",
+      link: "/sectors/dispute-resolution",
     },
   ];
   return (

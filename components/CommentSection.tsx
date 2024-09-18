@@ -70,7 +70,7 @@ const CommentSection = ({
           <p className="w-full py-3 bg-[#e6e6e6e5] mb-2"></p>
           <p className="w-full py-3 bg-[#e6e6e6e5] mb-2"></p>
         </div> */}
-        <div className="w-[80%] min-w-[300px] mx-auto">
+        <div className="w-full md:w-[80%] min-w-[300px] mx-auto">
           {commentList.length > 0 ? (
             commentList.map((comment, i) => (
               <div
@@ -97,11 +97,11 @@ const CommentSection = ({
           Leave a Comment
         </h1>
         {info && (
-          <p className="w-[80%] min-w-[300px] mx-auto text-center text-[var(--theme-color)] bg-[#e6e6e6e5] py-3 px-4 mb-2">
+          <p className="w-full md:w-[80%] min-w-[300px] mx-auto text-center text-[var(--theme-color)] bg-[#e6e6e6e5] py-3 px-4 mb-2">
             {info}
           </p>
         )}
-        <div className="w-[80%] min-w-[300px] mx-auto">
+        <div className="w-full md:w-[80%] min-w-[300px] mx-auto">
           <input
             type="text"
             placeholder="Name"

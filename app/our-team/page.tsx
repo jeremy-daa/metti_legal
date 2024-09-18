@@ -12,15 +12,14 @@ const page = () => {
     <div>
       <Hero2 title={"Our Team"} img={"/images/1.jpg"} />
       <Description
-        title={"Our Mission"}
+        title={"Meet Our Exceptional Team of Legal Experts"}
         description={[
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla architecto soluta voluptatem qui, quis rem tenetur fuga sapiente, quos quo alias beatae iusto facilis quam consequatur ducimus non doloremque, sit eius quod dolorum blanditiis voluptas libero.",
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla architecto soluta voluptatem qui, quis rem tenetur fuga sapiente, quos quo alias beatae iusto facilis quam consequatur ducimus non doloremque, sit eius quod dolorum blanditiis voluptas libero.",
+          "At Metti Tadele Legal Services, we have assembled a team of exceptional legal experts who are ready to provide world-class services tailored to your business needs. Contact us today and experience the difference our personalized approach can make for your success.",
         ]}
         img={"/images/2.jpg"}
       />
       <Lawyers />
-      {/* <TeamDescription /> */}
+      <TeamDescription />
     </div>
   );
 };

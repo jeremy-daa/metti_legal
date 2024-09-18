@@ -29,7 +29,7 @@ const page = async ({ params: { id } }: Params) => {
   return (
     <div className="">
       <Hero2 title={title} img={image} />
-      <div className="bg-[#ebebebbd] w-full pl-[200px] pr-[50px] flex justify-between">
+      <div className="bg-[#ebebebbd] w-full pl-5 sm:pl-10 lg:pl-24 xl:pl-[200px] pr-5 sm:pr-10 lg:pr-[50px] flex justify-between flex-col lg:flex-row">
         <div className="flex-[0.65]">
           <h1 className="text-4xl font-bold text-[var(--theme-color)] text-center pt-10 mb-16 px-4">
             {title}
@@ -39,9 +39,9 @@ const page = async ({ params: { id } }: Params) => {
             alt={title}
             width={1920}
             height={1080}
-            className="mx-auto max-w-[500px] h-auto object-cover max-h-[350px]"
+            className="mx-auto w-full md:max-w-[500px] h-auto object-cover max-h-[350px]"
           />
-          <div className="w-[80%] mx-auto mt-14 flex justify-center flex-col items-center">
+          <div className="w-full lg:w-[80%] mx-auto mt-14 flex justify-center flex-col items-center">
             <div className="text-start mb-[50px]">
               <p className="text-start text-[20px]">
                 <LineBreak str={content} />

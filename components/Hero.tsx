@@ -8,20 +8,21 @@ import Link from "next/link";
 const Hero = () => {
   const slides = [
     {
-      title: "Welcome to Metti Tadele Legal Services",
-      description: "Your World-Class Legal Partner in Ethiopia",
+      title: "Premier Legal Services in Ethiopia",
+      description:
+        "We provide a wide range of legal services to both local and international clients.",
       image: "/images/addis_ababa_1.jpg",
     },
     {
-      title: "We are a full-service law firm based in Addis Ababa, Ethiopia",
+      title: "Your Trusted Advocates for Justice and Excellence.",
       description:
-        "We provide a wide range of legal services to both local and international clients.",
+        "Our team of experienced lawyers are dedicated to providing the best legal services in Ethiopia.",
       image: "/images/addis_ababa_2.jpg",
     },
     {
-      title: " How can we help you?",
+      title: "Navigating Legal Challenges with Integrity and Expertise.",
       description:
-        "We can provide a wide range of legal services to both local and international clients.",
+        "We are committed to providing our clients with the best legal representation in Ethiopia.",
       image: "/images/addis_ababa_3.jpg",
     },
   ];

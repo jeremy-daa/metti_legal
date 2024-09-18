@@ -27,7 +27,9 @@ const Footer = () => {
             <h4>Reach Us</h4>
             <ul>
               <li>
-                <Link href="maps.google.com">Addis Ababa, Ethiopia</Link>
+                <Link href="https://maps.app.goo.gl/4fYG57vubh9HFyNfA">
+                  Genete Limat, Addis Ababa, Ethiopia
+                </Link>
               </li>
               <li>
                 <Link href="tel:+251990251565">(+251) - 99 - 025 - 1565</Link>
@@ -37,7 +39,7 @@ const Footer = () => {
                   href="mailto:exaple@example.com"
                   style={{ textTransform: "lowercase" }}
                 >
-                  example@example.com
+                  example
                 </Link>
               </li>
             </ul>

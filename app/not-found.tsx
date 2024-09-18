@@ -9,8 +9,7 @@ const page = () => {
       <Hero2 title={"Page Not FOund"} img={"/images/14.jpg"} />
       <Link
         href={"/"}
-        className="mx-auto z-[2] cursor-pointer enquire absolute bottom-8 right-[50%] translate-x-1/2"
-        style={{ padding: "10px 35px", fontSize: "1.1rem" }}
+        className="mx-auto z-[2] cursor-pointer absolute bottom-8 right-[50%] translate-x-1/2 button text-sm sm:text-base"
       >
         Go back to Home
       </Link>

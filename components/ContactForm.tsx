@@ -33,7 +33,7 @@ const ContactForm = () => {
     }
   };
   return (
-    <section className="w-full py-12 lg:py-[7rem] px-5 xs:px-10 md:px-24 flex justify-between lg:flex-row flex-col items-stretch gap-5">
+    <section className="w-full py-12 lg:py-[7rem] px-5 sm:px-10 md:px-24 flex justify-between lg:flex-row flex-col items-stretch gap-5">
       <div className="w-full h-full flex flex-col justify-center items- gap-5">
         <h1 className="section-heading">
           Get in touch with us for a free consultation
